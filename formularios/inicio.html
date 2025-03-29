@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      
+    <div style="text-align: left;">
+        <h1>Formulario estructurado</h1>
+        <form method="get">
+            <fieldset>
+                <legend>Datos personales</legend><br>
+            <label>Nombre:</label><br>
+            <input name ="nombre" required type="text"><br>
+            <label>Apellidos:</label><br>
+            <input name ="apellidos" required type="text"> <br>
+            <label>DNI:</label><br>
+            <input name ="dni" required type="number"> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto</legend><br>
+            <label>Nombre de usuario:</label><br>
+            <input name ="nombreusuario" required type="text" required><br>
+            <label>Contraseña:</label><br>
+            <input name ="contraseña" required type="password"><br>
+            <label>Repite la contraseña</label><br>
+            <input name ="repitecontraseña" required type="password"><br>
+        </fieldset>
+            <br>
+        </form>
+    </div>    
+    <div style="text-align: left;">
+        <h1>Formulario de pagos</h1>
+        <form method="get">
+            <fieldset>
+                <legend>MIS DATOS</legend><br>
+            <label>1.Nombre:</label>
+            <input name ="nombre" required type="text" placeholder="Escriba aquí su nombre"><br>
+            <label>2.Correo electronico:</label>
+            <input name ="correo" required type="email" placeholder="ejemplo@dominio.com"> <br>
+            <label>3.Teléfono:</label>
+            <input name ="telefono" required type="number" placeholder="ej. +34984530203"> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Dirección</legend><br>
+            <label>1.Dirección:</label>
+            <textarea name ="direccion" required type="text" required></textarea><br>
+            <label>2.Código Postal:</label>
+            <input name ="postal" required type="number" placeholder="CP"><br>
+            <label>3. Ciudad</label>
+            <input name ="ciudad" required type="text" placeholder="Ciudad"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Forma de pago</legend><br>
+            <fieldset>
+            <legend>1.Tarjeta de crédito:</legend><br>
+                <input type="radio" name="tarjeta" value="visa">VISA<br>
+                <input type="radio" name="tarjeta" value="american">American Express<br>
+                <input type="radio" name="tarjeta" value="master">Master Card<br>
+            </fieldset>
+            <label>2.Número tarjeta:</label>
+            <input name ="ntarjeta" required type="number" placeholder="Número tarjeta"><br>
+            <label>3.Código seguridad</label>
+            <input name ="codigo" required type="number" placeholder="Código seguridad"><br>
+            <label>3.Nombre tarjeta</label>
+            <input name ="nomtarjeta" required type="text" placeholder="Nombre exacto tarjeta"><br>
+        </fieldset>
+        <fieldset>
+            <button type="submit">Comprar</button>
+        </fieldset>
+        </form>
+    </div>
+    <div style="text-align: center;">
+        <h1>1. Factura: se debe escribir en los campos</h1>
+        <form method="get">
+        
+            <table border = 1 style="width: 100%;">
+                <colgroup>
+                <col style="width: 14;"/>
+                <col style="width: 14%;"/>
+                <col style="width: 16%;"/>
+                <col style="width: 14%;"/>
+                <col style="width: 14%;"/>
+                <col style="width: 14%;"/>
+                <col style="width: 14%;"/>
+                </colgroup>
+        
+                <tr> 
+                    <th rowspan="5" colspan="3">SUPERMERCADOS "LA VENDEDORA"</th>
+                    <th colspan="3"></th>
+                    <th>
+                        <input name "fecha" type="date">
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="4"><input name "factura" type="text">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Cliente</th>
+                    <td colspan="3"><input name "cliente type="text"></td>
+                </tr>
+                <tr>
+                    <th>RUC:</th>
+                    <td colspan="3"><input "ruc" type="number"></td>
+                </tr>
+                <tr>
+                    <th>Dirección</th>
+                    <td colspan="3"><input "direccion" type="text"</td>
+                </tr>
+                <tr>
+                    <th>CÓDIGO</th>
+                    <th>CANTIDAD</th>
+                    <th colspan="3">CONCEPTO</th>
+                    <th>PRECIO</th>
+                    <th>IMPORTE</th>
+                </tr>
+                <tr>
+                    <td><input "codigo1" type="text"></td>
+                    <td><input "cantidad1" type="number"></td>
+                    <td colspan="3"><input "concepto1" type="text" </td>
+                    <td><input "precio1" type="number"></td>
+                    <td><input "importe1" type="number"></td>
+                </tr>
+            <tr>
+                <td><input "codigo2" type="text"></td>
+                <td><input "cantidad2" type="number"></td>
+                <td colspan="3"><input "concepto2" type="text" </td>
+                <td><input "precio2" type="number"></td>
+                <td><input "importe2" type="number"></td>
+            </tr>
+            <tr>
+                <td><input "codigo3" type="text"></td>
+                    <td><input "cantidad3" type="number"></td>
+                    <td colspan="3"><input "concepto3" type="text" </td>
+                    <td><input "precio3" type="number"></td>
+                    <td><input "importe3" type="number"></td>
+            </tr>
+            <tr>
+                
+                <td><input "codigo4" type="text"></td>
+                    <td><input "cantidad4" type="number"></td>
+                    <td colspan="3"><input "concepto4" type="text" </td>
+                    <td><input "precio4" type="number"></td>
+                    <td><input "importe4" type="number"></td>
+            </tr>
+            <tr>
+                <td><input "codigo5" type="text"></td>
+                <td><input "cantidad5" type="number"></td>
+                <td colspan="3"><input "concepto5" type="text" </td>
+                <td><input "precio5" type="number"></td>
+                <td><input "importe5" type="number"></td>
+            </tr>
+            <tr>
+                <td colspan="4" rowspan="4"></td>
+                <th colspan="2">Impuesto</th>
+                <td><input "impuesto" type="number"></td>
+           
+            <tr>
+                <th colspan="2">Descuento</th>
+                <td><input "descuento" type="number"></td>
+            </tr>
+            <tr>
+                <th colspan="2">Base imponible</th>
+                <td><input "base" type="number"></td>
+            </tr>
+            <tr>
+                <th colspan="2">IVA</th>
+                <td><input "iva" type="number"></td>
+            </tr>
+            <tr>
+                <th colspan="6" rowspan="2">TOTAL FACTURA</th>
+                <th><input "total" type="number"></th>
+            </tr>
+            
+</body>
+</html>

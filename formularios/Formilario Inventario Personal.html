@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            margin: auto;
+            text-align: center;
+            border: 2px solid black;
+        }
+        .header {
+            background-color: #771b80;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+        input, select {
+            width: 100%;
+            border: none;
+            text-align: left;
+            font-size: 14px;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="header">
+            Machote de Inventario de Personal
+        </div>
+
+        <table>
+            <tr>
+                <td>Nombre:</td>
+                <td colspan="2"><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Dirección:</td>
+                <td colspan="2"><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Teléfono:</td>
+                <td colspan="2"><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Compañía de Seguros:</td>
+                <td colspan="2"><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Estado Civil:</td>
+                <td colspan="2"><input type="text"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="3">Estado General de Salud</th>
+            </tr>
+            <tr>
+                <td colspan="3" class="checkbox-group">
+                    <label><input type="checkbox"> Hepatitis</label>
+                    <label><input type="checkbox"> Hernias</label>
+                    <label><input type="checkbox"> Alergias</label>
+                    <label><input type="checkbox"> Hipertensión</label>
+                    <label><input type="checkbox"> Cálculo</label>
+                    <label><input type="checkbox"> Gastritis</label>
+                    <label><input type="checkbox"> Asma</label>
+                    <label><input type="checkbox"> Epilepsia</label>
+                    <label><input type="checkbox"> Otras: <input type="text" style="width: 50%;"></label>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="3">Experiencia Laboral</th>
+            </tr>
+            <tr>
+                <td>Empresa</td>
+                <td>Nombre del Puesto</td>
+                <td>Funciones del Puesto</td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="3">Formación Académica</th>
+            </tr>
+            <tr>
+                <td>Escolaridad</td>
+                <td>Escuela</td>
+                <td>Profesión</td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="2">Estudios Adicionales</th>
+            </tr>
+            <tr>
+                <td>Estudio o Escuela</td>
+                <td>Título</td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="3">Información Adicional</th>
+            </tr>
+            <tr>
+                <td>Puesto</td>
+                <td>No. Años en el Puesto</td>
+                <td>Pláticas, Juntas</td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="number"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Comentarios:</td>
+            </tr>
+            <tr>
+                <td colspan="3"><textarea style="width: 100%; height: 50px;"></textarea></td>
+            </tr>
+        </table>
+
+        <div class="footer"><br>
+            <button type="submit">Guardar Formulario</button><br>
+        </div>
+    </div>
+
+</body>
+</html>
